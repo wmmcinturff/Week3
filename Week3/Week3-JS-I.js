@@ -3,7 +3,7 @@
 //In these first 6 questions, replace `null` with the answer
 
 //1. create a string variable, it can contain anything
-const newString = "Taco Cat";
+const newString = 'Taco Cat';
 
 //2. create a number variable, it an be any number
 const newNum = 108;
@@ -18,7 +18,7 @@ const newSubtract = 10 - 5 === 5;
 const newMultiply = 10 * 5 === 40;
 
 //6. Solve the following math problem:
-const newModulo = 21 % 5 === null;
+const newModulo = 21 % 5 === 1;
 
 //In the next 22 problems you will compete the function. All of your code will go inside of the function braces.
 //Make sure you use return when the prompt asks you to.
@@ -27,9 +27,10 @@ const newModulo = 21 % 5 === null;
 
 // 7
 function returnString(str) {
-  return str;
+  return 'str';
   //simply return the string provided: str
 }
+
 
 // 8
 function add(x, y) {
@@ -84,7 +85,8 @@ function areSameLength(str1, str2) {
   // code here
   if (str1.length == str2.length) {
     return true;
-  } else {
+  } 
+  else {
     return false;
   }
   
@@ -109,6 +111,12 @@ function greaterThanFifty(num) {
   // return true if num is greater than fifty
   // otherwise return false
   // code here
+  if(num > 50) {
+    return true;
+    
+  } else {
+    return false;
+  }
 }
 
 // 16
@@ -132,17 +140,19 @@ function isEven(num) {
   }
 }
 
+
 // 18
 function isOdd(num) {
   // return true if num is odd
   // otherwise return false
   // code here
   if (num % 2 === 0) {
-    return true;
+    return false;
   }
    else {
-  return false;
-};
+  return true;
+}
+
 }
 
 // 19
@@ -187,7 +197,7 @@ function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
   // code here
-  return str + '!';
+  return `${str}!`
 }
 
 // 25
@@ -195,7 +205,7 @@ function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'NSS', 'Bootcamp' -> 'NSS Bootcamp'
   // code here
-  return firstName + ' ' + lastName;
+  return `${firstName} ${lastName}`;
   
 }
 
@@ -204,8 +214,10 @@ function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
   // code here
-  return 'Hi' + ' ' + name + '!';
+  return 'Hi ${name}!';
 }
+
+
 
 // The next three questions will have you implement math area formulas.
 // If you can't remember these area formulas then head over to Google.
